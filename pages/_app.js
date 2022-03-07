@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
   const triggerEvent = (move) => {
     console.log('sending event')
     channel.trigger('client-controllermovement', move, 'pong-game')
+    location.assign('\index2.html');
   }
   return (
     <div className="App">
